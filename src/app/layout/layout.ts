@@ -11,28 +11,27 @@ import { FormsModule } from '@angular/forms';
   standalone: true
 })
 export class Layout {
-
-
   quickQuery = '';
+  menuOpen = false;
 
   constructor(private router: Router) {}
-goSearch(): void {
-  const q = this.quickQuery?.trim() ?? '';
 
-  if (!q) {
-    // opcional: podrías mostrar un mensaje, o simplemente no hacer nada
-    return;
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
   }
 
-  this.router.navigate(['/busqueda'], {
-    queryParams: { q },
-    queryParamsHandling: 'merge'   // ← recomendado si quieres conservar otros params futuros
-  });
+  goSearch(): void {
+    const q = this.quickQuery?.trim() ?? '';
+    if (!q) return;
 
-  this.quickQuery = '';  // limpia el input después de buscar (mejora UX)
-}
+    this.router.navigate(['/busqueda'], {
+      queryParams: { q },
+      queryParamsHandling: 'merge'
+    });
 
-
+    this.quickQuery = '';
+    this.menuOpen = false; // Cerrar menú al buscar
+  }
 }
  
 

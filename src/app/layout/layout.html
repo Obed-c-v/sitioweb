@@ -1,18 +1,24 @@
 <header class="topbar">
-    <div class="brand">sito Estructura</div>
+    <div class="brand">Sitio Estructura</div>
 
-    <nav class="menu">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+    <button class="menu-toggle" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-      <a routerLink="/breadcrumbs" routerLinkActive="active">Breadcrumbs</a>
-        <a routerLink="/elementos" routerLinkActive="active">Elementos</a> 
-        <a routerLink="/menu" routerLinkActive="active">Menu</a>
-        <a routerLink="/mapa-sitio" routerLinkActive="active">Maoa del sitio</a> 
+    <nav class="menu" [class.open]="menuOpen">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="menuOpen = false">Inicio</a>
+        <a routerLink="/breadcrumbs" routerLinkActive="active" (click)="menuOpen = false">Breadcrumbs</a>
+        <a routerLink="/elementos" routerLinkActive="active" (click)="menuOpen = false">Elementos</a> 
+        <a routerLink="/menu" routerLinkActive="active" (click)="menuOpen = false">Menú</a>
+        <a routerLink="/mapa-sitio" routerLinkActive="active" (click)="menuOpen = false">Mapa</a> 
+        
+        <form class="search-form" (submit)="$event.preventDefault(); goSearch()">
+            <input class="form-control" placeholder="Buscar..." [(ngModel)]="quickQuery" name="quickQuery"/>
+            <button class="btn btn-sm btn-primary" type="submit">Ir</button>
+        </form>
     </nav>
-    <form class="d-flex mx-3" (submit)="$event.preventDefault(); goSearch()">
-        <input class="form-control form-control-sm me-2"placeholder="Buscar..." [(ngModel)]="quickQuery" name="quickQuery"/>
-        <button class="btn btn-sm btn-primary" type="submit">ir</button>
-    </form>
 </header>
 
 <main class="content">

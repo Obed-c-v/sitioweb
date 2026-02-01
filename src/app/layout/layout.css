@@ -1,31 +1,111 @@
 .topbar {
-    display : flex;
-    justify-content : space-between;
-    align-items : center;
-    padding : 12px 16px;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 .brand {
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #2563eb;
 }
 
-.menu a { 
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-    margin-right: 10 px;
+.menu a {
     text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #4b5563;
+    font-weight: 500;
+    transition: all 0.2s;
 }
 
+.menu a:hover {
+    background: #f3f4f6;
+    color: #1f2937;
+}
 
-.menu a.ctive {
-    font-weight: 700;
-    border: 1px solid #333;
+.menu a.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
 
+.search-form {
+    display: flex;
+    gap: 8px;
+    margin-left: 12px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 3px;
+    background: #374151;
+    border-radius: 2px;
+}
+
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+        gap: 12px;
+        border-bottom: 1px solid #eee;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-form {
+        margin-left: 0;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .search-form .form-control {
+        flex: 1;
+    }
 }
 
 .content {
     padding: 16px;
+    min-height: calc(100vh - 160px);
 }
 
 .footer {
@@ -36,4 +116,3 @@
 
 
 }
-
