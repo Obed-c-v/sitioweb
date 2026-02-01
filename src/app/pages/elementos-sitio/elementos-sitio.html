@@ -1,0 +1,148 @@
+<div class="min-h-screen bg-gray-50">
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24 relative overflow-hidden hero-dark">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+        Elementos UI
+      </h1>
+      <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 drop-shadow-md">
+        Componentes básicos y reutilizables para construir interfaces modernas y consistentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <section class="py-16 md:py-24 section-light">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">
+        Galería de elementos
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Botones -->
+        <div class="card">
+          <div class="card-header from-purple-500 to-indigo-600">
+            <span class="text-7xl text-white">🔘</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Botones</h3>
+            <p class="text-gray-600 mb-6">
+              Variaciones: primario, outline, con icono y loading.
+            </p>
+            <div class="flex flex-wrap gap-4 mb-6">
+              <button class="btn btn-primary">Primario</button>
+              <button class="btn btn-outline">Outline</button>
+              <button class="btn bg-green-600 text-white hover:bg-green-700">Success</button>
+            </div>
+            <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+&lt;button class="btn btn-primary"&gt;Primario&lt;/button&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="card">
+          <div class="card-header from-blue-500 to-cyan-600">
+            <span class="text-7xl text-white">🃏</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Cards</h3>
+            <p class="text-gray-600 mb-6">
+              Contenedores con sombra, hover y contenido estructurado.
+            </p>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-inner">
+              <h4 class="font-semibold mb-2">Ejemplo de card</h4>
+              <p class="text-sm text-gray-600">Este es un ejemplo dentro de una card.</p>
+            </div>
+            <pre class="bg-gray-100 p-4 rounded-lg text-sm mt-6 overflow-x-auto">
+&lt;div class="card"&gt;
+  &lt;div class="p-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Inputs -->
+        <div class="card">
+          <div class="card-header from-indigo-500 to-purple-600">
+            <span class="text-7xl text-white">✍️</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Inputs / Formularios</h3>
+            <p class="text-gray-600 mb-6">
+              Campos de texto, búsqueda, select y textarea estilizados.
+            </p>
+            <div class="space-y-4">
+              <input type="text" placeholder="Nombre" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--color-primary]">
+              <input type="search" placeholder="Buscar..." class="w-full px-4 py-3 rounded-full bg-gray-100 border-none focus:outline-none focus:ring-2 focus:ring-[--color-primary]">
+            </div>
+            <pre class="bg-gray-100 p-4 rounded-lg text-sm mt-6 overflow-x-auto">
+&lt;input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[--color-primary]"&gt;</pre>
+          </div>
+        </div>
+
+        <!-- Alertas -->
+        <div class="card">
+          <div class="card-header from-green-500 to-teal-600">
+            <span class="text-7xl text-white">🔔</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Alertas / Mensajes</h3>
+            <p class="text-gray-600 mb-6">
+              Notificaciones de éxito, advertencia, error e info.
+            </p>
+            <div class="space-y-4">
+              <div class="p-4 bg-green-100 text-green-800 rounded-lg">Éxito: Operación completada</div>
+              <div class="p-4 bg-yellow-100 text-yellow-800 rounded-lg">Advertencia: Revisa los datos</div>
+              <div class="p-4 bg-red-100 text-red-800 rounded-lg">Error: Algo salió mal</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="card">
+          <div class="card-header from-pink-500 to-rose-600">
+            <span class="text-7xl text-white">🏷️</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Badges / Tags</h3>
+            <p class="text-gray-600 mb-6">
+              Etiquetas pequeñas para categorías, estados o contadores.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">Angular</span>
+              <span class="px-4 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Tailwind</span>
+              <span class="px-4 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Nuevo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Loader -->
+        <div class="card">
+          <div class="card-header from-cyan-500 to-teal-600">
+            <span class="text-7xl text-white">⏳</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Loader / Spinner</h3>
+            <p class="text-gray-600 mb-6">
+              Indicadores de carga simples y elegantes.
+            </p>
+            <div class="flex justify-center my-8">
+              <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-[--color-primary]"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA final -->
+      <div class="text-center mt-20">
+        <a routerLink="/menu"
+           class="btn btn-primary text-xl px-12 py-6">
+          Ver más sobre navegación y menús →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>

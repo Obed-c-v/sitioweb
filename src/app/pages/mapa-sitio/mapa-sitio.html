@@ -1,0 +1,131 @@
+<div class="min-h-screen bg-gray-50">
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24 relative overflow-hidden hero-dark">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+        Mapa del sitio
+      </h1>
+      <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 drop-shadow-md">
+        Vista completa de todas las secciones y páginas del proyecto para navegar fácilmente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <section class="py-16 md:py-24 section-light">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">
+        Todas las secciones del sitio
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Página Inicio -->
+        <div class="card">
+          <div class="card-header from-blue-500 to-cyan-600">
+            <span class="text-7xl text-white">🏠</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Inicio</h3>
+            <p class="text-gray-600 mb-6">
+              Bienvenida al proyecto, resumen de secciones y tarjetas destacadas.
+            </p>
+            <a routerLink="/" class="btn btn-primary w-full text-center">
+              Ir a Inicio
+            </a>
+          </div>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="card">
+          <div class="card-header from-purple-500 to-indigo-600">
+            <span class="text-7xl text-white">📍</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Breadcrumbs</h3>
+            <p class="text-gray-600 mb-6">
+              Explicación, tipos y demo dinámico de migas de pan.
+            </p>
+            <a routerLink="/breadcrumbs" class="btn btn-primary w-full text-center">
+              Ver Breadcrumbs
+            </a>
+          </div>
+        </div>
+
+        <!-- Elementos -->
+        <div class="card">
+          <div class="card-header from-indigo-500 to-purple-600">
+            <span class="text-7xl text-white">🧩</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Elementos</h3>
+            <p class="text-gray-600 mb-6">
+              Galería de componentes UI: botones, cards, inputs, alertas y más.
+            </p>
+            <a routerLink="/elementos" class="btn btn-primary w-full text-center">
+              Ver Elementos UI
+            </a>
+          </div>
+        </div>
+
+        <!-- Menú -->
+        <div class="card">
+          <div class="card-header from-cyan-500 to-teal-600">
+            <span class="text-7xl text-white">🍔</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Menú</h3>
+            <p class="text-gray-600 mb-6">
+              Tipos de menús: navbar, hamburguesa, sidebar, dropdown, tabs y mega menu.
+            </p>
+            <a routerLink="/menu" class="btn btn-primary w-full text-center">
+              Ver Menús
+            </a>
+          </div>
+        </div>
+
+        <!-- Búsqueda -->
+        <div class="card">
+          <div class="card-header from-pink-500 to-rose-600">
+            <span class="text-7xl text-white">🔍</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Búsqueda</h3>
+            <p class="text-gray-600 mb-6">
+              Sistema de búsqueda avanzada con filtros y resultados dinámicos.
+            </p>
+            <a routerLink="/busqueda" class="btn btn-primary w-full text-center">
+              Probar Búsqueda
+            </a>
+          </div>
+        </div>
+
+        <!-- Error 404 (como extra) -->
+        <div class="card">
+          <div class="card-header from-red-500 to-rose-600">
+            <span class="text-7xl text-white">❌</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Página no encontrada</h3>
+            <p class="text-gray-600 mb-6">
+              Página de error 404 para rutas inexistentes.
+            </p>
+            <a routerLink="/" class="btn btn-primary w-full text-center">
+              Volver al Inicio
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA final -->
+      <div class="text-center mt-20">
+        <a routerLink="/" class="btn btn-primary text-xl px-12 py-6">
+          Volver al Inicio →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>

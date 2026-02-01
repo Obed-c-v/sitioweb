@@ -1,1 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
+/* === IMPORTS GLOBALES === */
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6d28d9;          
+  --color-primary-dark: #5b21b6;
+  --color-primary-light: #a78bfa;
+  --color-secondary: #9333ea;
+  --color-accent: #c084fc;
+  --color-gray-dark: #1f2937;
+  --color-gray-medium: #4b5563;
+  --color-gray-light: #f3f4f6;
+  --color-white: #ffffff;
+  --color-black: #111827;
+}
+
+/* === FUENTES === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+body {
+  @apply font-sans bg-gray-50 text-gray-800 antialiased;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* === TIPOGRAFÍA GLOBAL === */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight text-gray-900;
+}
+
+h1 { @apply text-4xl md:text-5xl lg:text-6xl mb-6; }
+h2 { @apply text-3xl md:text-4xl mb-8; }
+h3 { @apply text-2xl mb-6; }
+h4 { @apply text-xl mb-4; }
+
+p {
+  @apply text-gray-700 text-lg leading-relaxed;
+}
+
+a {
+  @apply text-[--color-primary] hover:text-[--color-primary-dark] transition-colors;
+}
+
+/* === BOTONES GLOBALES === */
+.btn {
+  @apply font-semibold rounded-full px-8 py-4 shadow-lg transition-all duration-300 inline-flex items-center justify-center;
+}
+
+.btn-primary {
+  @apply bg-[--color-primary] text-white hover:bg-[--color-primary-dark] hover:scale-105;
+}
+
+.btn-outline {
+  @apply border-2 border-[--color-primary] text-[--color-primary] hover:bg-[--color-primary] hover:text-white;
+}
+
+/* === TARJETAS GLOBALES === */
+.card {
+  @apply bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+}
+
+.card-header {
+  @apply h-56 bg-gradient-to-br flex items-center justify-center;
+}
+
+/* === TRANSICIONES SUAVES GLOBALES === */
+* {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.group:hover .group-hover\:translate-x-2 {
+  transform: translateX(0.5rem);
+}
+
+/* === UTILIDADES COMUNES === */
+.container {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* === COLORES Y CONTRASTE GLOBAL === */
+:root {
+  --text-dark: #111827;      /* negro/gris muy oscuro para fondos claros */
+  --text-light: #ffffff;     /* blanco para fondos oscuros */
+  --text-muted: #4b5563;     /* gris medio para párrafos */
+}
+
+/* Títulos principales (h1, h2, h3) - se ajustan según fondo */
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Hero oscuro/azul: texto blanco */
+.hero-dark h1, .hero-dark h2, .hero-dark p {
+  color: var(--text-light);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* sombra para mejor legibilidad */
+}
+
+/* Contenido claro/fondo blanco: texto oscuro */
+.section-light h1, .section-light h2, .section-light h3 {
+  color: var(--text-dark);
+}
+
+/* Párrafos generales */
+p, li {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Botones y links */
+a, .text-[--color-primary] {
+  color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+footer h3, footer h4, footer a {
+  text-shadow: 0 1px 3px rgba(86, 78, 78, 0.6);
+}

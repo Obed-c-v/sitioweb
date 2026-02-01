@@ -1,0 +1,84 @@
+<header class="topbar">
+    <div class="brand">sito Estructura</div>
+
+    <nav class="menu">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+
+      <a routerLink="/breadcrumbs" routerLinkActive="active">Breadcrumbs</a>
+        <a routerLink="/elementos" routerLinkActive="active">Elementos</a> 
+        <a routerLink="/menu" routerLinkActive="active">Menu</a>
+        <a routerLink="/mapa-sitio" routerLinkActive="active">Maoa del sitio</a> 
+    </nav>
+    <form class="d-flex mx-3" (submit)="$event.preventDefault(); goSearch()">
+        <input class="form-control form-control-sm me-2"placeholder="Buscar..." [(ngModel)]="quickQuery" name="quickQuery"/>
+        <button class="btn btn-sm btn-primary" type="submit">ir</button>
+    </form>
+</header>
+
+<main class="content">
+    <router-outlet></router-outlet>
+    
+</main>
+
+<footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-100 py-12 mt-auto">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!--Logo + descripción -->
+      <div>
+        <h3 class="text-2xl font-bold text-white mb-4">
+          Sitio<span class="text-[--color-accent]">Estructura</span>
+        </h3>
+        <p class="text-gray-200 mb-2">
+          Proyecto práctico para demostrar enrutamiento, componentes y búsqueda en Angular.
+        </p>
+        <p class="text-sm text-gray-300">
+          Hecho con gular • © 2026 OBED
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-6">Enlaces rápidos</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a routerLink="/" class="text-gray-100 hover:text-[--color-accent] transition-colors">Inicio</a></li>
+          <li><a routerLink="/breadcrumbs" class="text-gray-100 hover:text-[--color-accent] transition-colors">Breadcrumbs</a></li>
+          <li><a routerLink="/elementos" class="text-gray-100 hover:text-[--color-accent] transition-colors">Elementos</a></li>
+          <li><a routerLink="/menu" class="text-gray-100 hover:text-[--color-accent] transition-colors">Menú</a></li>
+          <li><a routerLink="/mapa-sitio" class="text-gray-100 hover:text-[--color-accent] transition-colors">Mapa del sitio</a></li>
+          <li><a routerLink="/busqueda" class="text-gray-100 hover:text-[--color-accent] transition-colors">Búsqueda</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Redes + Volver arriba -->
+      <div class="text-center md:text-right">
+        <h4 class="text-lg font-semibold text-white mb-6">Conecta conmigo</h4>
+        <div class="flex justify-center md:justify-end space-x-6 mb-6">
+          <a href="https://github.com" target="_blank" class="text-gray-100 hover:text-[--color-accent] transition-colors text-xl">
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="text-gray-100 hover:text-[--color-accent] transition-colors text-xl">
+            LinkedIn
+          </a>
+          <a href="https://x.com" target="_blank" class="text-gray-100 hover:text-[--color-accent] transition-colors text-xl">
+            X
+          </a>
+        </div>
+
+        <a href="#" class="inline-flex items-center text-[--color-accent] hover:text-white transition-colors text-lg">
+          Volver arriba
+          <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Línea divisoria + copyright -->
+    <div class="border-t border-gray-700 mt-10 pt-8 text-center text-sm text-gray-300">
+      Desarrollo web profesional con Angular • Todos los derechos reservados © 2026
+    </div>
+  </div>
+</footer>
+
+

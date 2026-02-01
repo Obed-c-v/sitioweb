@@ -1,0 +1,152 @@
+<div class="min-h-screen bg-gray-50">
+
+<!-- Hero en AZUL -->
+<section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24 relative overflow-hidden hero-dark">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+      Breadcrumbs
+    </h1>
+    <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 drop-shadow-md">
+      Navegación secundaria que muestra la ubicación actual del usuario dentro de la jerarquía del sitio.
+    </p>
+  </div>
+</section>
+  <!-- Contenido principal -->
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-6 max-w-5xl">
+      
+      <!-- ¿Qué son? -->
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          ¿Qué son los Breadcrumbs?
+        </h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+          Los breadcrumbs (o migas de pan) son un elemento de navegación que muestra el camino que ha seguido el usuario para llegar a la página actual. 
+          Se inspiran en el cuento de Hansel y Gretel, donde los niños dejaban migas para encontrar el camino de regreso.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-semibold mb-4 text-[--color-primary]">Ventajas principales</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✓</span> Mejora la orientación del usuario</li>
+              <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✓</span> Reduce la tasa de rebote</li>
+              <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✓</span> Facilita la navegación profunda</li>
+              <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✓</span> Ayuda al SEO (enlaces internos)</li>
+            </ul>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <h3 class="text-2xl font-semibold mb-4 text-[--color-primary]">Cuándo usarlos</h3>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✓</span> Sitios con jerarquía profunda (e-commerce, blogs, documentación)</li>
+              <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✓</span> Más de 3 niveles de navegación</li>
+              <li class="flex items-start"><span class="text-red-500 mr-3 text-xl">✗</span> Sitios muy planos o con navegación lineal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tipos de Breadcrumbs -->
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">
+          Tipos comunes de Breadcrumbs
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Tipo 1: Location-based -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all group">
+            <div class="text-center mb-6">
+              <span class="text-6xl">📍</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-center group-hover:text-[--color-primary] transition-colors">
+              Location-based
+            </h3>
+            <p class="text-gray-600 text-center">
+              Muestra la ruta real en la jerarquía del sitio (el más común).
+            </p>
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg text-sm font-mono text-center">
+              Inicio > Categoría > Subcategoría > Producto
+            </div>
+          </div>
+
+          <!-- Tipo 2: Path-based -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all group">
+            <div class="text-center mb-6">
+              <span class="text-6xl">🛤️</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-center group-hover:text-[--color-primary] transition-colors">
+              Path-based
+            </h3>
+            <p class="text-gray-600 text-center">
+              Muestra el camino exacto que tomó el usuario (historial de navegación).
+            </p>
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg text-sm font-mono text-center">
+              Inicio > Blog > Artículos > Cómo usar Angular
+            </div>
+          </div>
+
+          <!-- Tipo 3: Attribute-based -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all group">
+            <div class="text-center mb-6">
+              <span class="text-6xl">🏷️</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-center group-hover:text-[--color-primary] transition-colors">
+              Attribute-based
+            </h3>
+            <p class="text-gray-600 text-center">
+              Muestra filtros o atributos aplicados (común en e-commerce).
+            </p>
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg text-sm font-mono text-center">
+              Todos los productos > Color: Azul > Talla: M
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demo dinámico de breadcrumbs -->
+      <div class="mb-20 bg-white p-10 rounded-2xl shadow-xl border border-gray-100">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+          Demo dinámico de Breadcrumbs
+        </h2>
+
+        <nav aria-label="Breadcrumb" class="text-sm mb-8">
+          <ol class="flex items-center space-x-3 flex-wrap">
+            <li *ngFor="let crumb of breadcrumbs; let last = last; let i = index">
+              <a *ngIf="!last" [routerLink]="crumb.url" class="text-[--color-primary] hover:text-[--color-primary-dark] transition-colors">
+                {{ crumb.label }}
+              </a>
+              <span *ngIf="last" class="text-gray-600 font-medium">
+                {{ crumb.label }}
+              </span>
+              <span *ngIf="!last" class="mx-3 text-gray-400">/</span>
+            </li>
+          </ol>
+        </nav>
+
+        <p class="text-center text-gray-700 text-lg mb-6">
+          Navega por el sitio y mira cómo se actualiza automáticamente.
+        </p>
+
+        <!-- Botones de prueba -->
+        <div class="flex justify-center space-x-6 flex-wrap gap-4">
+          <button routerLink="/" class="px-6 py-3 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+            Ir a Inicio
+          </button>
+          <button routerLink="/elementos" class="px-6 py-3 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+            Ir a Elementos
+          </button>
+          <button routerLink="/busqueda" class="px-6 py-3 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+            Ir a Búsqueda
+          </button>
+        </div>
+      </div>
+
+      <!-- CTA final -->
+      <div class="text-center">
+        <a routerLink="/elementos"
+           class="inline-block bg-[--color-primary] text-white font-bold text-lg px-10 py-5 rounded-full shadow-xl hover:bg-[--color-primary-dark] hover:scale-105 transition-all duration-300">
+          Ver más componentes UI →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>

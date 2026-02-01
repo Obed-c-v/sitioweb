@@ -1,0 +1,168 @@
+<div class="min-h-screen bg-gray-50">
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24 relative overflow-hidden hero-dark">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
+        Menús / Navegación
+      </h1>
+      <p class="text-xl md:text-2xl max-w-4xl mx-auto opacity-95 drop-shadow-md">
+        Diferentes tipos de menús para guiar al usuario de forma clara y eficiente en cualquier sitio web.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <section class="py-16 md:py-24 section-light">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">
+        Tipos de menús más usados
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- 1. Navbar (barra superior) -->
+        <div class="card">
+          <div class="card-header from-indigo-500 to-purple-600">
+            <span class="text-7xl text-white">📱</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Navbar (Barra superior)</h3>
+            <p class="text-gray-600 mb-6">
+              El menú clásico horizontal en la parte superior. Ideal para sitios con pocas secciones principales. Responsivo (se convierte en hamburguesa en móvil).
+            </p>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-inner mb-6">
+              <div class="flex justify-between items-center bg-white p-4 rounded-lg">
+                <span class="font-bold">Logo</span>
+                <div class="space-x-6 hidden md:flex">
+                  <a href="#" class="text-[--color-primary]">Inicio</a>
+                  <a href="#" class="text-[--color-primary]">Productos</a>
+                  <a href="#" class="text-[--color-primary]">Contacto</a>
+                </div>
+                <button class="md:hidden text-[--color-primary]">☰</button>
+              </div>
+            </div>
+            <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
+&lt;nav class="flex justify-between"&gt;
+  &lt;div&gt;Logo&lt;/div&gt;
+  &lt;div class="hidden md:flex space-x-6"&gt;...&lt;/div&gt;
+  &lt;button class="md:hidden"&gt;☰&lt;/button&gt;
+&lt;/nav&gt;</pre>
+          </div>
+        </div>
+
+        <!-- 2. Menú hamburguesa -->
+        <div class="card">
+          <div class="card-header from-purple-500 to-pink-600">
+            <span class="text-7xl text-white">🍔</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Menú hamburguesa</h3>
+            <p class="text-gray-600 mb-6">
+              Icono de tres líneas que abre un menú lateral o desplegable en móvil. Muy usado en sitios responsive para ahorrar espacio.
+            </p>
+            <div class="flex justify-center my-8">
+              <div class="w-12 h-12 flex flex-col justify-center items-center bg-gray-200 rounded-lg">
+                <div class="w-8 h-1 bg-gray-700 mb-1.5"></div>
+                <div class="w-8 h-1 bg-gray-700 mb-1.5"></div>
+                <div class="w-8 h-1 bg-gray-700"></div>
+              </div>
+            </div>
+            <p class="text-center text-sm text-gray-600">
+              Toca o haz clic para desplegar menú lateral/fullscreen.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Sidebar (menú lateral) -->
+        <div class="card">
+          <div class="card-header from-blue-500 to-cyan-600">
+            <span class="text-7xl text-white">☰</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Sidebar (Menú lateral)</h3>
+            <p class="text-gray-600 mb-6">
+              Menú vertical fijo o colapsable a la izquierda/derecha. Ideal para aplicaciones, dashboards y sitios con muchas secciones.
+            </p>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-inner">
+              <ul class="space-y-3">
+                <li class="bg-white p-3 rounded-lg font-medium text-[--color-primary]">Dashboard</li>
+                <li class="p-3 hover:bg-gray-100 rounded-lg">Usuarios</li>
+                <li class="p-3 hover:bg-gray-100 rounded-lg">Configuración</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Dropdown / Menú desplegable -->
+        <div class="card">
+          <div class="card-header from-green-500 to-teal-600">
+            <span class="text-7xl text-white">▼</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Dropdown / Menú desplegable</h3>
+            <p class="text-gray-600 mb-6">
+              Aparece al hacer hover o clic en un botón. Útil para submenús, configuraciones o acciones.
+            </p>
+            <div class="relative inline-block">
+              <button class="btn btn-primary px-8">
+                Opciones ▼
+              </button>
+              <!-- Simulación de dropdown -->
+              <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl z-10 hidden group-hover:block">
+                <a href="#" class="block px-4 py-3 hover:bg-gray-100">Perfil</a>
+                <a href="#" class="block px-4 py-3 hover:bg-gray-100">Configuración</a>
+                <a href="#" class="block px-4 py-3 hover:bg-gray-100 text-red-600">Cerrar sesión</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Tabs (pestañas) -->
+        <div class="card">
+          <div class="card-header from-cyan-500 to-blue-600">
+            <span class="text-7xl text-white">📑</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Tabs (Pestañas)</h3>
+            <p class="text-gray-600 mb-6">
+              Cambia contenido sin recargar página. Ideal para secciones relacionadas.
+            </p>
+            <div class="flex border-b border-gray-200 mb-6">
+              <button class="px-6 py-3 border-b-2 border-[--color-primary] text-[--color-primary] font-medium">Perfil</button>
+              <button class="px-6 py-3 text-gray-600 hover:text-[--color-primary]">Configuración</button>
+              <button class="px-6 py-3 text-gray-600 hover:text-[--color-primary]">Notificaciones</button>
+            </div>
+            <p class="text-gray-700">Contenido de la pestaña activa...</p>
+          </div>
+        </div>
+
+        <!-- 6. Mega Menu (menú grande) -->
+        <div class="card">
+          <div class="card-header from-pink-500 to-rose-600">
+            <span class="text-7xl text-white">🌐</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Mega Menu</h3>
+            <p class="text-gray-600 mb-6">
+              Menú desplegable grande con columnas, imágenes y enlaces múltiples. Común en e-commerce y sitios corporativos.
+            </p>
+            <p class="text-center text-sm text-gray-500 italic mt-8">
+              Ejemplo: al hacer hover en "Productos" aparece grid con categorías e imágenes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA final -->
+      <div class="text-center mt-20">
+        <a routerLink="/mapa-sitio"
+           class="btn btn-primary text-xl px-12 py-6">
+          Ver estructura completa del sitio →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
