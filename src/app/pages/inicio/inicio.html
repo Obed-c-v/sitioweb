@@ -1,159 +1,172 @@
 <div class="min-h-screen bg-gray-50">
 
   <!-- Hero Section: Texto izquierda + Imagen derecha -->
-  <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-32 relative overflow-hidden">
-    <div class="container mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-        
+  <section
+    class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 md:py-24 lg:py-32 relative overflow-hidden">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10">
+
         <!-- Columna izquierda: Texto -->
         <div class="text-center lg:text-left">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 md:mb-6 leading-tight">
             Explora la estructura de un sitio web moderno
           </h1>
-          <p class="text-lg md:text-xl mb-10 max-w-xl mx-auto lg:mx-0 opacity-90">
-            Proyecto práctico en Angular para entender Breadcrumbs, Elementos, Menú, Mapa del sitio y Búsqueda inteligente.
+          <p class="text-base sm:text-lg md:text-xl mb-8 md:mb-10 max-w-xl mx-auto lg:mx-0 opacity-90">
+            Proyecto práctico en Angular para entender Breadcrumbs, Elementos, Menú, Mapa del sitio y Búsqueda
+            inteligente.
           </p>
           <a routerLink="/mapa-sitio"
-             class="inline-block bg-white text-blue-700 font-bold text-lg px-10 py-5 rounded-full shadow-2xl hover:bg-gray-100 hover:text-blue-800 transform hover:scale-105 transition-all duration-300">
+            class="inline-block bg-white text-blue-700 font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-full shadow-2xl hover:bg-gray-100 hover:text-blue-800 transform hover:scale-105 transition-all duration-300">
             Ver Mapa del Sitio →
           </a>
         </div>
 
         <!-- Columna derecha: Imagen -->
-        <div class="flex justify-center lg:justify-end">
-          <div class="relative w-full max-w-lg lg:max-w-xl">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                 alt="Laptop con código Angular en escritorio moderno"
-                 class="rounded-2xl shadow-2xl border-8 border-white/30 object-cover w-full">
-            <!-- Overlay sutil opcional -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
+        <div class="flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-xl">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+              alt="Laptop con código Angular en escritorio moderno"
+              class="rounded-xl sm:rounded-2xl shadow-2xl border-4 sm:border-8 border-white/30 object-cover w-full">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl sm:rounded-2xl"></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Decoración de fondo opcional -->
+    <!-- Decoración de fondo -->
     <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-white/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 md:w-96 h-64 md:h-96 bg-white/10 rounded-full blur-3xl"></div>
     </div>
   </section>
 
-  <!-- Sección de Tarjetas (mantenidas iguales y consistentes) -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-800">
-        Secciones más exploradas
+  <!-- Sección de Tarjetas -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+      <h2
+        class="text-3xl md:text-5xl font-bold text-center mb-12 md:text-5xl font-bold text-center mb-16 text-gray-800">
+        Secciones exploradas
       </h2>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
         <!-- Tarjeta Breadcrumbs -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col md:flex-row">
-          <div class="p-8 md:w-3/5 flex flex-col justify-center">
-            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[--color-primary] transition-colors">
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
+            <span class="text-7xl text-white opacity-90">📍</span>
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-1">
+            <h3
+              class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
               Breadcrumbs
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-sm md:text-base flex-1">
               Navegación jerárquica clara y elegante para mejorar la experiencia del usuario.
             </p>
             <a routerLink="/breadcrumbs"
-               class="mt-4 inline-flex items-center text-[--color-primary] font-semibold hover:text-[--color-primary-dark] group-hover:translate-x-2 transition-transform">
+              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:translate-x-2 transition-transform">
               Explorar →
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-          </div>
-          <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center">
-            <span class="text-9xl text-white opacity-90">📍</span>
           </div>
         </div>
 
         <!-- Tarjeta Elementos -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col md:flex-row">
-          <div class="p-8 md:w-3/5 flex flex-col justify-center">
-            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[--color-primary] transition-colors">
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center">
+            <span class="text-7xl text-white opacity-90">🧩</span>
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-1">
+            <h3
+              class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
               Elementos
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-sm md:text-base flex-1">
               Componentes UI básicos y avanzados para construir interfaces profesionales.
             </p>
             <a routerLink="/elementos"
-               class="mt-4 inline-flex items-center text-[--color-primary] font-semibold hover:text-[--color-primary-dark] group-hover:translate-x-2 transition-transform">
+              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:translate-x-2 transition-transform">
               Explorar →
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-          </div>
-          <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center">
-            <span class="text-9xl text-white opacity-90">🧩</span>
           </div>
         </div>
 
         <!-- Tarjeta Menú -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col md:flex-row">
-          <div class="p-8 md:w-3/5 flex flex-col justify-center">
-            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[--color-primary] transition-colors">
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+            <span class="text-7xl text-white opacity-90">🍔</span>
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-1">
+            <h3
+              class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
               Menú
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-sm md:text-base flex-1">
               Diseños de navegación responsivos, dropdowns y sidebars.
             </p>
             <a routerLink="/menu"
-               class="mt-4 inline-flex items-center text-[--color-primary] font-semibold hover:text-[--color-primary-dark] group-hover:translate-x-2 transition-transform">
+              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:translate-x-2 transition-transform">
               Explorar →
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-          </div>
-          <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-            <span class="text-9xl text-white opacity-90">🍔</span>
           </div>
         </div>
 
         <!-- Tarjeta Búsqueda -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col md:flex-row">
-          <div class="p-8 md:w-3/5 flex flex-col justify-center">
-            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[--color-primary] transition-colors">
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+            <span class="text-7xl text-white opacity-90">🔍</span>
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-1">
+            <h3
+              class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
               Búsqueda
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-sm md:text-base flex-1">
               Búsqueda avanzada con filtros, query params y resultados dinámicos.
             </p>
             <a routerLink="/busqueda"
-               class="mt-4 inline-flex items-center text-[--color-primary] font-semibold hover:text-[--color-primary-dark] group-hover:translate-x-2 transition-transform">
+              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:translate-x-2 transition-transform">
               Explorar →
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-          </div>
-          <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
-            <span class="text-9xl text-white opacity-90">🔍</span>
           </div>
         </div>
 
         <!-- Tarjeta Mapa del sitio -->
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col md:flex-row">
-          <div class="p-8 md:w-3/5 flex flex-col justify-center">
-            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-[--color-primary] transition-colors">
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 border border-gray-100 group flex flex-col">
+          <div class="h-48 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+            <span class="text-7xl text-white opacity-90">🗺️</span>
+          </div>
+          <div class="p-6 md:p-8 flex flex-col flex-1">
+            <h3
+              class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">
               Mapa del sitio
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-gray-600 mb-6 text-sm md:text-base flex-1">
               Vista completa de todas las páginas y estructura del sitio.
             </p>
             <a routerLink="/mapa-sitio"
-               class="mt-4 inline-flex items-center text-[--color-primary] font-semibold hover:text-[--color-primary-dark] group-hover:translate-x-2 transition-transform">
+              class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:translate-x-2 transition-transform">
               Explorar →
               <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
             </a>
-          </div>
-          <div class="md:w-2/5 h-64 md:h-auto bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
-            <span class="text-9xl text-white opacity-90">🗺️</span>
           </div>
         </div>
       </div>
